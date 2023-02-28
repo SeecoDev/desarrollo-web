@@ -1,0 +1,17 @@
+html, body{
+    background-color: black;
+    text-align: center;
+    color: #89BBFE;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*62.5*/
+    font-size: 1.3rem;
+    padding: 1%;
+}
+
+button{
+    padding: 1.3rem;
+    color: #89BBFE;
+    font-size: 1.3rem;
+    background-color: black;
+
+}
