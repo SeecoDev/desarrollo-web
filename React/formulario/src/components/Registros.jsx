@@ -1,11 +1,25 @@
-import React from 'react'
+import React from "react";
+import Estudiante from "./Estudiante";
 
-const Registros = () => {
+const Registros = ({ estudiantes, setEstudiante, eliminarEstudiante}) => {
   return (
-    <div className='md:w-1/2 lg:w-3/5 bg-[#7D82B8]'>
-      <h2>Registros</h2>
-    </div>
-  )
-}
+    <div className="p-[20px] md:w-1/2 lg:w-3/5 bg-[#EEF0F2] rounded-md text-[#EF798A] md:h-screen md:overflow-y-scroll">
+      <h2 className="font-bold text-center text-m mb-4">
+        Listado de estudiantes
+      </h2>
 
-export default Registros
+      {estudiantes.map((estudiante) => {
+        return (
+          <Estudiante
+            key={estudiante.id}
+            estudiante={estudiante}
+            setEstudiante={setEstudiante}
+            eliminarEstudiante={eliminarEstudiante}
+          />
+        );
+      })}
+    </div>
+  );
+};
+
+export default Registros;
