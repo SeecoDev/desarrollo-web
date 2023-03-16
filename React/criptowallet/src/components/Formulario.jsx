@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "@emotion/styled";
-import { Input } from "postcss";
+import useSelectorMonedas from "../hooks/useSelectorMonedas";
+import { monedas } from "../data/monedas";
 
 const InputSubmit = styled.input`
   background-color: white;
@@ -15,9 +16,19 @@ const InputSubmit = styled.input`
   }
 `;
 
+const Seleccion = styled.select`
+  background-color: white;
+
+`
+
 export const Formulario = () => {
+
+
+  const [SelectorMonedas] = useSelectorMonedas('Elige tu moneda: ', monedas);
   return (
     <form>
+      <SelectorMonedas />
+
       <InputSubmit type="submit" value="Enviar" />
     </form>
   );
