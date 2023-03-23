@@ -1,17 +1,17 @@
 import styled from "@emotion/styled";
-import imageCrypto from "./assets/images/bitcoin_real.png";
-import { Formulario } from "./components/Formulario";
+import imageCrypto from "./assets/images/criptowallet.png";
+import { Formulario} from "./components/Formulario";
 
 const Heading = styled.h1`
   font-family: "Montserrat", sans-serif;
   color: gold;
-  font-size: 3em;
+  font-size: 4em;
   text-align: center;
 
   &::after {
     content: "";
-    width: 400px;
-    height: 6px;
+    width: 180px;
+    height: 4px;
     background-color: gold;
     display: block;
   }
