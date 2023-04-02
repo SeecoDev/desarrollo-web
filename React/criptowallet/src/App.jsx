@@ -6,6 +6,7 @@ const Heading = styled.h1`
   font-family: "Montserrat", sans-serif;
   color: gold;
   font-size: 4em;
+  font-weight: 500;
   text-align: center;
 
   &::after {
@@ -22,6 +23,7 @@ const Imagen = styled.img`
   width: 80%;
   margin: 100 auto 0 auto;
   display: block;
+  align-items: auto;
 `;
 
 function App() {

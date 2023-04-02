@@ -20,8 +20,10 @@ const InputSubmit = styled.input`
 `;
 
 
-const Seleccion = styled.select`
-  background-color: white;
+const Seleccion = styled.div`
+  align-items: normal;
+  margin: auto;
+  padding: 10px;
 
 `
 export const Formulario = () => {
@@ -82,13 +84,13 @@ export const Formulario = () => {
   return (
     <>
     {error && <Error>'Selecciona una divisa y una cripto'</Error>}
-      <div>
+      <Seleccion>
       <form onSubmit={manejadorSubmit} >
         <SelectorMonedas/>
         <SelectorCriptos/>
         <InputSubmit type="submit" value="Cotizar" />   
       </form>
-      </div>
+      </Seleccion>
       {consulta && <Display datos={data} imagen={imagenCrypto} loading={loading}></Display>}
     </>
   )
